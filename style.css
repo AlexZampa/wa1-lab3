@@ -1,18 +1,41 @@
-#sidebar{
+.sidebar{
+
     height: 100vh;
-    padding: 0;
-    background-color: rgb(233, 230, 230);
+    width: auto;
+    align-items:flex-start;
+    padding-left: 0;
+    background-color: var(--sidebar-color);
 }
 
 .bar-items {
-    padding-left: 1em;
-    background-color: rgb(233, 230, 230);
+    padding-left: 0;
 }
 
-.bar-items h2 {
-    background-color: rgb(75, 105, 236);
+.bar-items h1 {
+    margin-top: 1em;
+    background-color: var(--main-color);
+    width: 20vw;
 }
 
-.bar-items:hover{
-    background-color: rgb(196, 191, 191);
+.bar-items p {
+    margin-left: 1em;
+    border-bottom: 1px solid;
+}
+
+.bar-items p:hover{
+    margin-left: 1em;
+    background-color: var(--sidebar-element-color);
+}
+
+.no-lt-padding{
+    padding-left: 0;
+    padding-top: 0;
+}
+
+
+:root {
+    --main-color:#0d6dfdb6;
+    --sidebar-color: rgb(245, 248, 255);
+    --sidebar-header-color: rgb(81, 122, 255);
+    --sidebar-element-color: #0d6dfd44;
 }
